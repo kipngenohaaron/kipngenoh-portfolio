@@ -16,6 +16,11 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 /* Header Styles */
 header {
   background-color: #333;
@@ -92,13 +97,22 @@ button {
   padding: 2rem;
 }
 
+.skills-section .skills-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills-section .skills-category {
+  width: 45%;
+}
+
 .skills-section ul {
   list-style-type: none;
 }
 
 .skills-section li {
-  display: inline-block;
-  margin-right: 15px;
+  margin-bottom: 0.5rem;
 }
 
 /* Contact Section */
@@ -115,4 +129,24 @@ button {
 .dark-mode button {
   background-color: #e0e0e0;
   color: black;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills-section .skills-container {
+    flex-direction: column;
+  }
+
+  .skills-section .skills-category {
+    width: 100%;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
 }
