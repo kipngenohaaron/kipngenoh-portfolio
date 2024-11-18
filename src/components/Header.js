@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = ({ toggleDarkMode }) => {
   return (
     <header>
-      <h1>My Portfolio</h1>
+      <h1>Kipngenoh</h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
