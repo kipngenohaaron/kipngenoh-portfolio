@@ -21,7 +21,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ toggleDarkMode, darkMode }) => {
   return (
     <header className="header">
       <div className="logo">
@@ -31,14 +31,18 @@ const Header = () => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/skills">Skills</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
+      <button onClick={toggleDarkMode} className="dark-mode-toggle">
+        {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+      </button>
     </header>
   );
 };
 
 export default Header;
+
 
