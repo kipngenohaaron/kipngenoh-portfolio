@@ -20,7 +20,6 @@
 // export default Header;
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
 
 const Header = () => {
   return (
@@ -42,3 +41,4 @@ const Header = () => {
 };
 
 export default Header;
+
