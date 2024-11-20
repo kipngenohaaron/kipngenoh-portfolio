@@ -17,7 +17,7 @@ const Hero = () => {
     <section className="hero">
       <img
       img
-        src="/images/kipngenoh.png"
+        src="https://via.placeho.lder.com/150"
         alt="Profile"
         className="profile-pic"
       />
