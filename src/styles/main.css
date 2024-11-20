@@ -287,6 +287,15 @@ h1, h2, h3 {
   margin-top: 0;
   color: #333;
 }
+.project-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
 
 /* Skills Section */
 .skills {
