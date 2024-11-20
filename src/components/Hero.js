@@ -11,7 +11,7 @@
 
 // export default Hero;
 import React from 'react';
-import profilePic from './images/kipngenoh.jpg';  // Importing the image
+import profilePic from '../images/kipngenoh.jpg';  // Corrected import path
 
 const Hero = () => {
   return (
@@ -29,4 +29,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
