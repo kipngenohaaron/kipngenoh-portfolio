@@ -22,25 +22,27 @@
 // };
 
 // export default Skills;
-import React from 'react';
+import React from "react";
 
 const Skills = () => {
   const skills = {
-    'Front-End': ['React', 'HTML', 'CSS', 'JavaScript'],
-    'Back-End': ['Node.js', 'Django', 'PHP'],
-    'Tools': ['Git', 'VS Code', 'Postman']
+    "Front-End": ["React", "HTML", "CSS", "JavaScript"],
+    "Back-End": ["Node.js", "Django", "PHP"],
+    "Tools": ["Git", "VS Code", "Postman"],
   };
 
   return (
     <section className="skills">
-      <h2>Skills</h2>
+      <h2 className="skills-title">Skills</h2>
       <div className="skills-grid">
         {Object.keys(skills).map((category, index) => (
           <div className="skills-card" key={index}>
-            <h3>{category}</h3>
-            <ul>
+            <h3 className="skills-category">{category}</h3>
+            <ul className="skills-list">
               {skills[category].map((skill, i) => (
-                <li key={i}>{skill}</li>
+                <li className="skills-item" key={i}>
+                  <span className="skill-icon">✔</span> {skill}
+                </li>
               ))}
             </ul>
           </div>
@@ -51,3 +53,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
