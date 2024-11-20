@@ -324,6 +324,65 @@ h1, h2, h3 {
 .skills-card li {
   margin-bottom: 0.5rem;
 } */
+/* Skills Section Styling */
+.skills {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skills-category {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007BFF;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-item {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-icon {
+  color: #007BFF;
+  font-size: 1.2rem;
+}
 
 /* Contact Section */
 .contact {
