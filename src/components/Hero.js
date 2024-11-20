@@ -17,7 +17,7 @@ const Hero = () => {
     <section className="hero">
       <img
       img
-        src="https://via.placeholder.com/150"
+        src="/images/kipngenoh.png"
         alt="Profile"
         className="profile-pic"
       />
