@@ -11,13 +11,13 @@
 
 // export default Hero;
 import React from 'react';
+import profilePic from './images/kipngenoh.jpg';  // Importing the image
 
 const Hero = () => {
   return (
     <section className="hero">
       <img
-      img
-        src="https://via.placeho.lder.com/150"
+        src={profilePic}  // Using the imported image
         alt="Profile"
         className="profile-pic"
       />
@@ -29,3 +29,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
