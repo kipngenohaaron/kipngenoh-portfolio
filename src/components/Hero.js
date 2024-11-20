@@ -16,13 +16,14 @@ const Hero = () => {
   return (
     <section className="hero">
       <img
+      img
         src="https://via.placeholder.com/150"
         alt="Profile"
         className="profile-pic"
       />
       <h1>Hi, I'm Kipngenoh Aaron</h1>
-      <p>A passionate ICT trainer and software developer.</p>
-      <a href="#contact" className="cta">Contact Me</a>
+      <p>A passionate ICT trainer and software developer.</p><br/>
+      <a href="/contact" className="cta">Contact Me</a>
     </section>
   );
 };
